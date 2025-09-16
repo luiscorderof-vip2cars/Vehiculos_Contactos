@@ -31,18 +31,58 @@ Antes de comenzar asegúrate de tener instalado:
    ```bash
    git clone https://github.com/TU_USUARIO/Vip2Cars_VehiculosContactos.git
    cd Vip2Cars_VehiculosContactos
-composer install
-cp .env.example .env
-php artisan key:generate
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=VehiculosContactos_DB
-DB_USERNAME=tu_usuario
-DB_PASSWORD=tu_password
+2. **Instalar dependencias de PHP**
+   ```bash
+   composer install
 
-php artisan migrate --seed
-php artisan serve
-Email: demo@vip2cars.local
-Password: demo1234
+3. **Crear el archivo de entorno**
+   ```bash
+   cp .env.example .env
+
+4. **Generar la clave de la aplicación**
+   ```bash
+   php artisan key:generate
+
+5. **Configurar la base de datos en .env**
+   ```bash
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=VehiculosContactos_DB
+   DB_USERNAME=tu_usuario
+   DB_PASSWORD=tu_password
+
+6. **Ejecutar migraciones y seeders**
+   ```bash
+   php artisan migrate --seed
+
+## ▶️ Uso
+
+1. **Levantar el servidor de desarrollo**
+   ```bash
+   php artisan serve
+   La aplicación estará disponible en:
+   👉 http://127.0.0.1:8000
+   
+2. **Usuario de prueba**
+   ```bash
+   Email: demo@vip2cars.local
+   Password: demo1234
+
+3. **Endpoints principales (API REST)**
+   ```bash
+    | Método | Endpoint             | Descripción         |
+    | ------ | -------------------- | ------------------- |
+    | GET    | `/api/vehicles`      | Listar vehículos    |
+    | POST   | `/api/vehicles`      | Crear vehículo      |
+    | PUT    | `/api/vehicles/{id}` | Actualizar vehículo |
+    | DELETE | `/api/vehicles/{id}` | Eliminar vehículo   |
+    | GET    | `/api/contacts`      | Listar contactos    |
+    | POST   | `/api/contacts`      | Crear contacto      |
+    | PUT    | `/api/contacts/{id}` | Actualizar contacto |
+    | DELETE | `/api/contacts/{id}` | Eliminar contacto   |
+
+## 🤝 Contribuciones
+¡Las contribuciones son bienvenidas!
+Si deseas mejorar este proyecto, envía un Pull Request o abre un Issue.
