@@ -72,16 +72,12 @@ Antes de comenzar asegúrate de tener instalado:
 
 3. **Endpoints principales (API REST)**
    ```bash
-    | Método | Endpoint             | Descripción         |
-    | ------ | -------------------- | ------------------- |
-    | GET    | `/api/vehicles`      | Listar vehículos    |
-    | POST   | `/api/vehicles`      | Crear vehículo      |
-    | PUT    | `/api/vehicles/{id}` | Actualizar vehículo |
-    | DELETE | `/api/vehicles/{id}` | Eliminar vehículo   |
-    | GET    | `/api/contacts`      | Listar contactos    |
-    | POST   | `/api/contacts`      | Crear contacto      |
-    | PUT    | `/api/contacts/{id}` | Actualizar contacto |
-    | DELETE | `/api/contacts/{id}` | Eliminar contacto   |
+   | Método | Endpoint           | Descripción         |
+   | ------ | ------------------ | ------------------- |
+   | GET    | /api/vehicles      | Listar vehículos    |
+   | POST   | /api/vehicles      | Crear vehículo      |
+   | PUT    | /api/vehicles/{id} | Actualizar vehículo |
+   | DELETE | /api/vehicles/{id} | Eliminar vehículo   |
 
 ## 🤝 Contribuciones
 ¡Las contribuciones son bienvenidas!
